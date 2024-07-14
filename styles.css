@@ -60,8 +60,14 @@ nav ul li a:hover {
     justify-content: center;
     color: #fff;
     text-align: center;
+    position: relative;
 }
 
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+}
 
 .hero h2 {
     font-size: 2rem;
@@ -72,10 +78,10 @@ nav ul li a:hover {
 
 .services {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
     padding: 2rem 0;
     background-color: #fff;
+    justify-content: center;
 }
 
 .service {
@@ -123,6 +129,7 @@ footer {
     text-align: center;
     padding: 1rem 0;
 }
+
 /* Media queries para dispositivos móviles */
 @media (max-width: 768px) {
     .services {
