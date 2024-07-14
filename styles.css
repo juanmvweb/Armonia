@@ -1,26 +1,29 @@
-/* styles.css */
-
-/* General Styles */
 body {
     font-family: 'Merriweather', serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #fafafa;
     color: #333;
 }
 
-header {
-    background: #a8e6cf; /* Pastel green */
-    color: white;
+.top-bar {
+    background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.header-content {
+    background-color: #333;
+    color: #fff;
     padding: 1rem 0;
     text-align: center;
-    background-image: url('ruta-a-imagen-header.jpg'); /* Añadir una imagen de fondo */
-    background-size: cover;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2rem;
 }
 
 nav ul {
@@ -28,7 +31,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    background: #ffd3b6; /* Pastel orange */
+    background-color: #444;
     margin: 0;
 }
 
@@ -44,119 +47,80 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #ffaaa5; /* Darker pastel orange */
+    background-color: #555;
 }
 
-main {
-    padding: 1rem;
+.hero {
+    background-image: url('ruta-a-tu-imagen-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
 }
 
-section {
-    background: white;
-    margin: 1rem 0;
+.hero h2 {
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.5);
     padding: 1rem;
     border-radius: 5px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    background-color: #fff;
+}
+
+.service {
+    background: #f4f4f4;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    width: calc(25% - 2rem);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-section#fotografia {
-    background-color: #ffebee; /* Light pastel pink */
+.service img {
+    max-width: 100%;
+    border-radius: 5px;
 }
 
-section#naturaleza {
-    background-color: #e0f7fa; /* Light pastel blue */
-}
-
-section#feng-shui {
-    background-color: #e8f5e9; /* Light pastel green */
-}
-
-section#vibraciones-positivas {
-    background-color: #f3e5f5; /* Light pastel purple */
-}
-
-section#inspiracion-en-el-hogar {
-    background-color: #fffde7; /* Light pastel yellow */
-}
-
-h2 {
-    color: #4CAF50;
-    margin-top: 0;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
+.service h3 {
     margin-top: 0.5rem;
+    font-size: 1.5rem;
 }
 
-form input, form textarea, form button {
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.service p {
+    font-size: 1rem;
+    color: #666;
 }
 
-form button {
-    background: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
+.button {
+    display: inline-block;
     margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
-form button:hover {
-    background: #45a049;
+.button:hover {
+    background-color: #555;
 }
 
 footer {
-    background: #b3e5fc; /* Pastel blue */
-    color: white;
+    background-color: #333;
+    color: #fff;
     text-align: center;
     padding: 1rem 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
-.galeria-fotos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.galeria-fotos img {
-    width: 100%;
-    max-width: 300px;
-    margin: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 0.5rem 0;
-    }
-
-    .galeria-fotos img {
-        max-width: 100%;
-    }
-}
-
-/* Añadir transiciones suaves */
-nav ul li a, form button, .galeria-fotos img {
-    transition: all 0.3s ease-in-out;
-}
-
-nav ul li a:hover, form button:hover, .galeria-fotos img:hover {
-    transform: scale(1.05);
-}
 
