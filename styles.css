@@ -129,14 +129,11 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 0.5rem 0;
-    }
+/* Añadir transiciones suaves */
+nav ul li a, form button, .galeria-fotos img {
+    transition: all 0.3s ease-in-out;
+}
 
-    .galeria-fotos img {
-        max-width: 100%;
-        margin: 0.5rem 0;
-    }
+nav ul li a:hover, form button:hover, .galeria-fotos img:hover {
+    transform: scale(1.05);
 }
