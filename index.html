@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienestar y Armonía</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -99,7 +100,7 @@
 
         <section id="contacto">
             <h2>Contacto</h2>
-            <form>
+            <form onsubmit="return validateForm()">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre">
                 <label for="email">Email:</label>
@@ -110,9 +111,9 @@
             </form>
             <p>Redes sociales:</p>
             <ul>
-                <li><a href="enlace-a-red-social">Facebook</a></li>
-                <li><a href="enlace-a-red-social">Twitter</a></li>
-                <li><a href="enlace-a-red-social">Instagram</a></li>
+                <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
             </ul>
         </section>
 
@@ -144,5 +145,6 @@
     <footer>
         <p>&copy; 2024 Bienestar y Armonía</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
