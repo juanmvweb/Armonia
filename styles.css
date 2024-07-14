@@ -51,7 +51,7 @@ nav ul li a:hover {
 }
 
 .hero {
-    background-image: url('ruta-a-tu-imagen-hero.jpg');
+    background-image: url('https://cdn.pixabay.com/photo/2024/02/26/14/13/stone-8598089_1280.jpg');
     background-size: cover;
     background-position: center;
     height: 50vh;
@@ -60,6 +60,15 @@ nav ul li a:hover {
     justify-content: center;
     color: #fff;
     text-align: center;
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Oscurecer la imagen de fondo */
 }
 
 .hero h2 {
