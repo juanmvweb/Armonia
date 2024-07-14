@@ -6,15 +6,17 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fafafa;
     color: #333;
 }
 
 header {
-    background: #4CAF50;
+    background: #a8e6cf; /* Pastel green */
     color: white;
     padding: 1rem 0;
     text-align: center;
+    background-image: url('ruta-a-imagen-header.jpg'); /* Añadir una imagen de fondo */
+    background-size: cover;
 }
 
 header h1 {
@@ -26,7 +28,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    background: #333;
+    background: #ffd3b6; /* Pastel orange */
     margin: 0;
 }
 
@@ -42,7 +44,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #4CAF50;
+    background: #ffaaa5; /* Darker pastel orange */
 }
 
 main {
@@ -55,6 +57,26 @@ section {
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section#fotografia {
+    background-color: #ffebee; /* Light pastel pink */
+}
+
+section#naturaleza {
+    background-color: #e0f7fa; /* Light pastel blue */
+}
+
+section#feng-shui {
+    background-color: #e8f5e9; /* Light pastel green */
+}
+
+section#vibraciones-positivas {
+    background-color: #f3e5f5; /* Light pastel purple */
+}
+
+section#inspiracion-en-el-hogar {
+    background-color: #fffde7; /* Light pastel yellow */
 }
 
 h2 {
@@ -91,7 +113,7 @@ form button:hover {
 }
 
 footer {
-    background: #333;
+    background: #b3e5fc; /* Pastel blue */
     color: white;
     text-align: center;
     padding: 1rem 0;
