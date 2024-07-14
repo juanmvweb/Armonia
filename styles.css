@@ -81,3 +81,14 @@ footer {
     bottom: 0;
     width: 100%;
 }
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .galeria-fotos img {
+        max-width: 100%;
+        margin: 0.5rem 0;
+    }
+}
